@@ -1,4 +1,6 @@
+import React from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import avatarImage from "../assets/images/image-avatar.png"; // Import the image
 
 function Navbar() {
   return (
@@ -47,7 +49,7 @@ function Navbar() {
             <h1 className="font-extrabold ">SNEAKERS</h1>
           </div>
         </div>
-        <div className="navbar  hidden lg:flex">
+        <div className="navbar hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
               <a>Collections</a>
@@ -75,7 +77,7 @@ function Navbar() {
             >
               <div className="indicator">
                 <MdOutlineShoppingCart className="w-7 h-7" />
-                <span className="badge badge-sm indicator-item  bg-red-600">
+                <span className="badge badge-sm indicator-item bg-red-600">
                   3
                 </span>
               </div>
@@ -102,7 +104,8 @@ function Navbar() {
               className="btn btn-ghost btn-circle avatar"
             >
               <div className="w-10 rounded-full">
-                <img alt="" src="./src/assets/images/image-avatar.png" />
+                <img alt="User Avatar" src={avatarImage} />{" "}
+                {/* Use imported image */}
               </div>
             </div>
             <ul
