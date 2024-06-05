@@ -1,12 +1,14 @@
-import React from "react";
-import ProductCard from "./components/ProductCard";
+import Card from "./components/Card";
 
-const App = () => {
+import Navbar from "./components/Navbar";
+
+function App() {
   return (
-    <div>
-      <ProductCard />
+    <div className="mx-auto max-w-[1110px]">
+      <Navbar />
+      <Card />
     </div>
   );
-};
+}
 
 export default App;
